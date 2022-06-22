@@ -5,6 +5,746 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+h2, a, p{
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.75em;
+}
+
+/* HOME PAGE */
+.main-body{
+    width: fit-content;
+    background:#202020;
+    color: white;
+}
+
+.main-header{
+    max-width: 86%;
+    padding: 40px 0;
+}
+
+.main-nav, .nav-list, .main-nav .col-2 ul{
+    display: flex;
+    align-items: center;
+}
+
+.main-nav .col-1{
+    margin: 0;
+    width: 55%;
+}
+
+.main-nav .col-1 img{
+    width: 15%;
+}
+
+.main-nav .col-2{
+    margin: 0;
+    width: 45%;
+}
+
+.main-nav .col-2 ul{
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main-nav .col-2 li, .call-to-action .col-2{
+    display: flex;
+    
+    margin: 0;
+    justify-content: flex-end;
+
+}
+
+.main-nav .col-2 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+
+}
+
+.main-nav .col-2 .nav-item a:hover{
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-image-slice: 1;
+    border-image: linear-gradient(to right, #CCFFD9 20% ,#00E796 80%) 1;
+}
+
+.nav-cta-item a{
+    background: linear-gradient(35deg, #00E796 40%, #00E796 70%);
+    box-shadow: 0 0 5px #CCFFD9;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+/* Hamburger Menu */
+.hamburger{
+    display: none;
+    float: right;
+    cursor: point;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #CCFFD9;
+}
+
+
+
+.call-to-action{
+    width: 86%;
+    display: flex;
+    padding: 60px 0 100px 0;
+}
+
+#call-to-action .col-1, #call-to-action .col-2{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.call-to-action .col-1 .container{
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+    padding-right: 140px;
+}
+
+.section-intro{
+    margin: auto 0 5px;
+    padding: 10px 0;
+}
+
+#call-to-action h2{
+    width: auto;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.nikky{
+    margin-bottom: 20px;
+}
+
+.nikky .gradient-name{
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 92px;
+    color: white;
+    background: linear-gradient(90deg, #CCFFD9 20%, #00E796 50%, #CCFFD9 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: animatedText 5s linear infinite reverse;
+}
+
+@keyframes animatedText{
+    to{
+        background-position: 200%;
+    }
+}
+
+.nikky p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+    line-height: 1.75em;
+}
+
+.call-to-action .col-2 img{
+    max-width: 500px;
+    margin: 0;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px#00E796;
+}
+
+.call-to-action .container a{
+    padding: 15px 60px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+.call-to-action .container .explore{
+    background: linear-gradient(35deg, #CCFFD9 5%, #00E796 30%);
+    border: 2px solid #00e796;
+    box-shadow: 0 0 5px #CCFFD9;
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.call-to-action .container .explore:hover{
+    background: transparent;
+    border: 2px solid #00E796;
+}
+
+.call-to-action .container .connect{
+    background: transparent;
+    border: 2px solid #00E796;
+    color: white;
+    font-weight: 600;
+}
+
+.call-to-action .container .connect:hover{
+    background: linear-gradient(35deg, #CCFFD9 5%, #00E796 30%);
+    box-shadow: 0 0 5px #CCFFD9;
+}
+
+/* CTA END */
+
+/* PORTFOLIO START */
+#portfolio, #about-me{
+    width: 100%;
+    padding: 60px 0;
+}
+
+#portfolio .container, #about-me .container{
+    width: 1200px;
+}
+
+#portfolio h2, #timeline h2, #about-me h2, #skills h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#portfolio .row, #about-me .row{
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .row-1 .col-1, #about-me .row-2 .col-1{
+    width: 50%;
+    padding: 20px 20px 20px 0px;
+}
+
+#portfolio .row-2 .col-2, #about-me .row-1 .col-2{
+    width: 50%;
+    padding: 20px 0px 20px 20px;
+}
+
+#portfolio h3, #about-me h3, #about-me h3{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+#portfolio p{
+    padding-bottom: 40px;
+}
+
+#portfolio img, #about-me img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+#portfolio .courageously-starting, #portfolio .sales-opt-in{
+    padding: 12px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+#portfolio .courageously-starting, #portfolio .sales-opt-in{
+    background: linear-gradient(35deg, #CCFFD9 5%, #00E796 30%);
+    border: 2px solid #00e796;
+    box-shadow: 0 0 5px #CCFFD9;
+    margin-right: 20px;
+    color: white;
+}
+
+#portfolio .courageously-starting:hover, #portfolio .sales-opt-in:hover{
+    background: transparent;
+    border: 2px solid #00E796;
+}
+
+#portfolio .qbr{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#portfolio a{
+    color: #CCFFD9;
+    font-weight: 700;
+}
+
+#portfolio a:hover{
+    color: #00E796;
+}
+/* PORTFOLIO END */
+
+
+/* SUMMARY START */
+.summary{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #3a3a3a;
+}
+
+.summary .container{
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary .container .col-1, .summary .container .col-2, .summary .container .col-3{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 60px 40px 80px;
+    width: 400px;
+    height: 300px;
+    background: #4e4e4e;
+    color: #CCFFD9;
+    text-align: center;
+    border: 2px solid #00E796;
+    border-radius: 15px;
+}
+
+.summary .container .col-1:hover, .summary .container .col-2:hover, .summary .container .col-3:hover, .timeline-container .content:hover,   .timeline-container .container:hover::after, #portfolio img:hover, #about-me img:hover{
+    box-shadow: 0px 0px 20px #CCFFD9;
+}
+
+
+.summary .container h5{
+    width: 100%;
+    font-size: 82px;
+    margin-bottom: 10px;
+}
+
+.summary .container p{
+    font-size: 22px;
+    font-weight: 600;  
+    line-height: 1.5em;
+}
+
+#value{
+    position: relative;
+    right: 30px;
+}
+
+.summary span{
+    position: relative;
+    left: 185px;
+    bottom:110px;
+    font-size: 82px;
+    font-weight: 800;
+}
+
+.summary .giving-it-my-all{
+    position: relative;
+    bottom:26px;
+    right: 45px;
+}
+
+/* SUMMARY END */
+
+
+
+/* TIMELINE START */
+
+.timeline{
+    background: #3a3a3a;
+    padding: 60px 0 120px 0;
+}
+
+.timeline-intro{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    color:#CCFFD9;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #CCFFD9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline-container .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-container .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 3px solid #00E796;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .timeline-container .left {
+    right: 30%;
+  }
+  
+  /* Place the container to the right */
+  .timeline-container .right {
+    left: 30%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .timeline-container .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #CCFFD9;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #CCFFD9;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .timeline-container .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #CCFFD9;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #CCFFD9 transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .timeline-container .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .timeline-container .content {
+    padding: 20px 30px;
+    background: #4e4e4e;
+    border: 2px solid #00E796;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  #timeline h4{
+    font-size: 16px;
+    padding-bottom: 6px;
+    }
+
+#timeline h3{
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+
+/* SKILLS START */
+
+#skills{
+    width: 100%;
+    background-color: #3a3a3a;
+    padding: 60px 0;
+}
+
+#skills .container{
+    width: 1200px;
+}
+
+#skills .container h2{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#skills .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#skills .col{
+    width: 25%;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#skills .content{
+    padding-bottom: 20px;
+}
+
+#skills .content h3{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#skills img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* SKILLS END */
+
+
+/* CONTACT START */
+#connect{
+    width: 100%;
+    background: linear-gradient(0deg, #202020 10% ,#3A3A3A 50%);
+    padding: 60px 0;
+}
+
+#connect .container{
+    width: 1200px;
+}
+
+#connect .row{
+    display: flex;
+}
+
+#connect .col-1{
+    padding:0px 60px 20px 20px;
+}
+
+#connect h3{
+    font-size: 42px;
+    padding-bottom: 10px;
+
+}
+
+#connect p{
+    padding-right: 20px;
+}
+
+#connect input, #connect textarea{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+#connect button{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(35deg, #CCFFD9 5%, #00E796 30%);
+    border: 2px solid #00e796;
+    box-shadow: 0 0 5px #CCFFD9;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#connect button:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #00E796;
+}
+
+
+/* CONTACT END */
+
+
+/* FOOTER START*/
+
+#footer{
+    width: 100%;
+    padding: 15px 0;
+    border: solid;
+    border-width: 2px 0 0 0;
+    border-image-slice: 1;
+    border-image: linear-gradient(to right, #00E796 20% ,#CCFFD9 80%) 1;
+}
+
+#footer .row{
+    width: 1600px;
+    display: flex;
+    align-items: center;
+}
+
+#footer .col{
+    width: 33.3%;
+}
+
+#footer .center{
+    text-align: center;
+}
+
+#footer .right{
+    text-align: right;    
+}
+
+#footer .right a{
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+#footer .right a:hover{
+    color: #00E796;
+}
+
+#footer img{
+    width: 75px;
+    border-radius: 100px;
+}
+
+/* FOOTER END */
+
+
+
+/* MEDIA QUERIES FOR HOMEPAGE */
+
+@media screen and (max-width: 1280px){
+    #summary, #footer .row{
+        min-width: 100%;
+    }
+
+    #summary .container, #portfolio .container, #about-me .container{
+        width: 86%;
+    }
+
+    #footer .row{
+        padding: 0 40px;
+    }
+}
+
+/* HAMBURGER BAR FOR MOBILE */
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        padding-top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background: #202020;
+        width: 100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+}
+
+.nav-list.active{
+    left: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #CCFFD9;
+}
+
+.nav-list.active .nav-item, .nav-list.active .nav-cta-item{
+    padding: 10px;
+}
+
+.nav-cta-item a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border: none;
+    
+    }
+
+.nav-cta-item a:hover{
+        border: solid;
+        border-width: 0 0 1px 0;
+        border-image-slice: 1;
+        border-image: linear-gradient(to right, #CCFFD9 20% ,#00E796 80%) 1;
+}
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 601px) {
+/* Place the timelime to the left */
+.timeline-container::after {
+left: 31px;
+}
+
+/* Full-width containers */
+.timeline-container .container {
+width: 100%;
+padding-left: 70px;
+padding-right: 25px;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.timeline-container .container::before {
+left: 60px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+
+/* Make sure all circles are at the same spot */
+.timeline-container .left::after,.timeline-container .right::after {
+left: 15px;
+}
+
+/* Make all right containers behave like the left ones */
+.timeline-container .right {
+left: 0%;
+}
+.timeline-container .left {
+    right: 0%;
+    }
+}
+
+/* INDEX PAGE */
+
 body{
     background: black;
 }
@@ -17,10 +757,7 @@ body{
     border-width: 0px 0 2px 0;
     border-image-slice: 1;
     border-image: linear-gradient(to right, #FF0000 20%, #00FF00 40%, #0000FF 60%, #FF00FF 80%) 1;
-
-    animation: animatedBorder 5s linear infinite;
 }
-
 nav .nav-column{
     margin: 0;
     padding: 20px;
@@ -80,20 +817,5 @@ nav .nav-column img{
 }
 
 
+/* END INDEX PAGE */
 
-
-
-
-/* MOBILE RESPONSIVE */
-@media screen and (max-width: 544px){
-    .header .container{
-        padding: 0 60px;
-    }
-    
-    .gradient-text{
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: bold;
-    }
-}

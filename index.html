@@ -3,23 +3,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance | Nikky Hwang</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>Nikky Hwang</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <nav class="border-gradient">
-        <div class="nav-column">
-            <div><a href="./index.html"><img src="/assets/NH_Favicon.png" alt=""></a></div>
+<body class="main-body">
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class=col-1>
+                <img src="./assets/NH_Favicon.png" alt="NH Logo">
+            </div>
+            <div class="col-2">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="/#about-me">About Me</a></li>
+                    <li class="nav-item"><a href="/#skill">Skills</a></li>
+                    <li class="nav-cta-item"><a href="/#connect">Let's Connect!</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="call-to-action" class="call-to-action">
+        <div class="col-1">
+            <div class="container">
+                <div class="section-intro">
+                    <h2>Hello! I'm</h2>
+                </div>
+                <div class="nikky">
+                    <h1 class="gradient-name">Nikky Hwang</h1>
+                    <p>I am a Front-End Web Developer and welcome to my website. This website is custom built by my fingers, HTML5/CSS3/JS, and a little bit of magic! Hope you enjoy and feel free to contact me for any questions or inqueries.</p>
+                </div>
+                <a class="explore" href="/#summary">Explore</a>
+                <a class="connect" href="/#connect">Say Hi!</a>
+            </div>
         </div>
-        <div class="nav-column">
-            <div></div>
+        <div class="col-2">
+            <img src="./assets/nikky-hwang.png" alt="">
         </div>
-    </nav>
-    <div class="header">
+    </section>
+
+    <section id="summary" class="summary">
         <div class="container">
-            <p class="gradient-text">Something Pretty Cool is Coming Soon...</p>
-            <!-- <a class="home-button" href="./home.html">Home</a> -->
-    </div>
-    <script type="text/javascript" src="/main.js"></script>
+            <div class="col-1">
+                <h5>3+</h5>
+                <p>years of experience</p>
+            </div>
+            <div class="col-2">
+                <h5>20+</h5>
+                <p>professional and personal projects</p>
+            </div>
+            <div class="col-3">
+                    <h5 id="value">100</h5><span>%</span>
+                    <p class="giving-it-my-all">giving it my all</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class= "row row-1">
+                <div class="col-1">
+                    <h3>Courageously Starting Membership Website</h3>
+                    <p>This website was built with Thrive Theme Builder on Wordpress. The client was asking for a website where she could have membership functionality so that her clients could purchase her coaching services. Only paid subscribers will have access to her content.</p>
+                    <p>This client work was through <a class="qbr" href="https://quickbusinessresolutions.com">Quick Business Resolutions</a>.</p>
+                    <a class="courageously-starting" href="https://courageouslystarting.com">Visit Site</a>
+
+                </div>
+                <div class="col-2">
+                    <img id="img1" src="./assets/cs-site.png" alt="">
+                </div>
+            </div>
+            <div class="row row-2">
+                <div class="col-1">
+                    <img src="./assets/desiree-sales-page.png" alt="">
+                </div>
+                <div class="col-2">
+                    <h3>Intuitive Reading Sales Page</h3>
+                    <p>Client was requesting a sales page different from her normal branding kit. She provided an image of herself requesting the color palette to match and content for the page. This page was build in Thrive Theme Builder on Wordpress.</p>
+                    <p>This client work was through <a class="qbr" href="https://quickbusinessresolutions.com">Quick Business Resolutions</a>.</p>
+                    <a class="sales-opt-in" href="https://desireelanz.com/intuitive-reader-foundations-training/">Visit Sales Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline">
+        <div class="timeline-intro">
+            <h2>My Journey</h2>
+        </div>
+        <div class="timeline-container">            
+            <div class="container left">
+                <div class="content">
+                    <h4>2013</h4>
+                    <h3>John R. Rogers High School</h3>
+                    <p>High School Diploma</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h4>2016</h4>
+                    <h3>Pierce College</h3>
+                    <p>Associates of Arts Degree</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h4>2019</h4>
+                    <h3>Eastern Washington University</h3>
+                    <p>Bachelor of Arts Visual Communication Design</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h4>2019</h4>
+                    <h3>Eastern Washington University</h3>
+                    <p>User Experience Design Certificate</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h4>2019-2021</h4>
+                    <h3>Blue Roots Cannabis Company</h3>
+                    <p>Lead Marketing and Graphic Designer</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h4>2021-Current</h4>
+                    <h3>Quick Business Resolutions</h3>
+                    <p>Web and Tech Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row row-1">
+                <div class="col-1">
+                    <img src="https://picsum.photos/600/500" alt="">
+                </div>
+                <div class="col-2">
+                    <h3>Who is Nikky Hwang?</h3>
+                    <p>I was born and raised in the Puget Sound area. I moved over to Spokane, WA to pursue my BA in Visual Communication Design back in 2019. It wasn't until then I found the world of web development.</p>
+                    <p>I instantly fell in love with every part of it and so I took every classes EWU offered and received their User Experience Design Certificate, but needed more! So I have been self teaching myself ever since.</p>
+                </div>
+            </div>
+            <div class="row row-2">
+                <div class="col-1">
+                    <h3>My Interests</h3>
+                    <p>When you don't see me behind screen (which is rare), I have a few places you could possibly find me at. I love to hit the local gym and slam my weights. Powerlifting is something I recently found an interest in and would love to compete one day. If I am not there, I will most likely be exploring different restaurants, as I am a food-lover!</p>
+                </div>
+                <div class="col-2">
+                    <img src="https://picsum.photos/600/500" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/html-icon.png" alt="">
+                        <h3>HTML5</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/css-icon.png" alt="">
+                        <h3>CSS3</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/javascript-icon.png" alt="">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/illustrator-icon.png" alt="">
+                        <h3>Adobe Illustrator</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/photoshop-icon.png" alt="">
+                        <h3>Adobe Photoshop</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/premiere-pro-icon.png" alt="">
+                        <h3>Adobe Premiere Pro</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/responsive-icon.png" alt="">
+                        <h3>Responsive Design</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/wordpress-icon.png" alt="">
+                        <h3>Wordpress</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/cms-icon.png" alt="">
+                        <h3>Content Management Systems</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/crm-icon.png" alt="">
+                        <h3>Customer Relationship Management</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/seo-icon.png" alt="">
+                        <h3>SEO</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img src="./assets/digital-marketing-icon.png" alt="">
+                        <h3>Digital Marketing</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect" class="contact-me">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h3>Let's Connect!</h3>
+                    <p>Want to connect and make something awesome together? Or if you have any questions, please feel free to send them my way.</p>
+                    <div class="list">
+                        <div class="list-col-1">
+                            <p>San Diego, CA</p>
+                        </div>
+                        <div clss="list-col-2">
+                            <p>hello@nikkyhwang.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <form id="contact-form" class="contact-form" method="post" action="contact-form.php">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <textarea name="message" id="message" placeholder="Your message." cols="70" rows="8" maxlength="3000" required></textarea>
+                        <button type="submit" id="contact-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="row">
+            <div class="col left">
+                <img src="./assets/NH_Favicon.png" alt="NH Logo">
+            </div>
+            <div class="col center">
+                <p>&copy;2022 Nikky Hwang</p>
+            </div>
+            <div class="col right">
+                <a href="/home.html">Back top</a>
+            </div>
+            
+        </div>
+    </footer>
+
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
