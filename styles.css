@@ -214,7 +214,7 @@ h2, a, p{
     width: 1200px;
 }
 
-#portfolio h2, #timeline h2, #about-me h2, #skills h2{
+#portfolio h2, #timeline h2, #about-me h2, #skills h2, #connect h3{
     text-align: center;
     text-transform: capitalize;
     font-size: 42px;
@@ -538,44 +538,37 @@ h2, a, p{
     display: flex;
 }
 
-#connect .col-1{
-    padding:0px 60px 20px 20px;
+#connect .container{
+    width: 900px;
+    border-radius: 15px;
+    background: #202020;
+    padding:60px 40px 60px 40px;
 }
-
-#connect h3{
-    font-size: 42px;
-    padding-bottom: 10px;
-
+#connect hr{
+    margin: 20px 350px;
+    border: solid 1px #00E796;
 }
-
 #connect p{
-    padding-right: 20px;
+    padding: 5px 60px;
+    text-align: center;
 }
 
-#connect input, #connect textarea{
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 15px;
-}
-
-#connect button{
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    padding: 15px;
-    color: white;
+#connect a{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
     background: linear-gradient(35deg, #CCFFD9 5%, #00E796 30%);
     border: 2px solid #00e796;
     box-shadow: 0 0 5px #CCFFD9;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
 }
 
-#connect button:hover{
-    cursor: pointer;
+#connect a:hover{
     background: transparent;
     border: 2px solid #00E796;
 }
@@ -676,9 +669,13 @@ h2, a, p{
         text-align: center;
         transition: .5s;
     }
-
-    .nav-item{
+    
+.nav-item{
         margin: 16px 0;
+}
+
+.main-nav .col-2 li a{
+    font-size: 32px;
 }
 
 .nav-list.active{
@@ -688,7 +685,12 @@ h2, a, p{
 }
 
 .nav-list.active .nav-item, .nav-list.active .nav-cta-item{
-    padding: 10px;
+    width: 100%;
+    padding: 40px;
+}
+
+.nav-list.active .nav-item:active, .nav-list.active .nav-item:hover, .nav-list.active .nav-cta-item:hover, .nav-list.active .nav-cta-item:active{
+    background-color: #3A3A3A;
 }
 
 .nav-cta-item a{
@@ -696,7 +698,6 @@ h2, a, p{
         text-decoration: none;
         font-size: 18px;
         border: none;
-    
     }
 
 .nav-cta-item a:hover{
@@ -705,12 +706,129 @@ h2, a, p{
         border-image-slice: 1;
         border-image: linear-gradient(to right, #CCFFD9 20% ,#00E796 80%) 1;
 }
+
+
+/* SUMMARY RESPONSIVE */
+
+    #summary .container{
+        max-width: 80%;
+        flex-wrap: wrap;
+    }
+
+    #summary .container .col{
+        width: 100%;
+        margin: 20px;
+    }
+
+    #summary h5{
+        font-size: 7em;
+    }
+
+    .summary span{
+        position: relative;
+        left: 38%;
+        bottom: 82%;
+        font-size: 82px;
+        font-weight: 800;
+    }
+    
+    .summary .giving-it-my-all{
+        position: relative;
+        bottom: 20%;
+        right:  25%;
+    }
+
+/* PORTFOLIO AND ABOUT ME RESPONSIVE */
+
+    #portfolio h2, #timeline h2, #about-me h2, #skills h2, #connect h3{
+        font-size: 62px;
+    }
+
+    #portfolio .row, #about-me .row{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #portfolio .col #about-me .col{
+        width: 100%;
+}
+
+#portfolio .row .col, #about-me .row .col{
+    width: 80%;
+}
+
+#portfolio .row-1 .col-2, #portfolio .row-2 .col-1, #about-me .row-2 .col-2, #about-me .row-1 .col-1{
+    display: flex;
+
+}
+
+#portfolio .row-1, #about-me .row-2{
+    flex-direction: column-reverse;
+}
+
+#portfolio h3, #about-me h3{
+    text-align: center;
+    font-size: 44px;    
+}
+
+#portfolio p, #about-me p{
+    text-align: center;
+    font-size: 25px;
+}
+
+#portfolio img, #about-me img{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+#portfolio .btn{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 32px;
+    margin: 0 auto;
 }
 
 
+/* TIMELINE */
+#timeline h4{
+    font-size: 24px;
+}
+
+#timeline h3{
+    font-size: 28px;
+}
+
+#timeline p{
+    font-size: 22px;
+}
+
+/* SKILL SECTION */
+
+#skills .col{
+    padding: 0 20px;
+}
+#skills h3{
+    font-size: 22px;
+}
+
+/* FOOTER */
+#footer .row{
+    min-height: 100px;
+}
+
+#footer p{
+    font-size: 22px
+}
+
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 601px) {
-/* Place the timelime to the left */
+
+    /* Place the timelime to the left */
 .timeline-container::after {
 left: 31px;
 }
@@ -742,4 +860,73 @@ left: 0%;
 .timeline-container .left {
     right: 0%;
     }
+
+#call-to-action{
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center
+
+}
+
+#call-to-action .container{
+    width: 100%;
+}
+
+#call-to-action .col{
+    width: 100%;
+    justify-content: center;
+}
+
+#call-to-action .col-1 .container{
+    padding: 0;
+}
+
+#call-to-action .section-intro{
+    width: 100%;
+    margin: 0;
+}
+
+#call-to-action h2{
+    padding-top: 40px;
+    font-size: 42px;
+}
+
+#call-to-action p, #about-me p, #portfolio p, #connect p{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+#call-to-action a, #connect a{
+    display: flex;
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 32px;
+}
+
+#skills .row{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#skills .col{
+    width: 50%;
+}
+
+#skills h3{
+    font-size: 42px;
+    font-weight: 400;
+    padding-bottom: 60px;
+}
+
+#connect .container{
+    width: 80%;
+}
+
+#connect p{
+    padding-bottom: 40px;
+}
+
 }
