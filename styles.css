@@ -689,10 +689,6 @@ h2, a, p{
     padding: 40px;
 }
 
-.nav-list.active .nav-item:active, .nav-list.active .nav-item:hover, .nav-list.active .nav-cta-item:hover, .nav-list.active .nav-cta-item:active{
-    background-color: #3A3A3A;
-}
-
 .nav-cta-item a{
         color: white;
         text-decoration: none;
@@ -785,6 +781,7 @@ h2, a, p{
 
 #portfolio .reference{
     padding-bottom: 40px;
+    font-size: 32px;
 }
 
 #portfolio .btn{
@@ -928,6 +925,7 @@ left: 0%;
 }
 
 #connect .container{
+    padding-bottom: 80px;
     width: 80%;
 }
 
