@@ -726,7 +726,7 @@ h2, a, p{
 
     .summary span{
         position: relative;
-        left: 38%;
+        left: 40%;
         bottom: 82%;
         font-size: 82px;
         font-weight: 800;
@@ -735,13 +735,13 @@ h2, a, p{
     .summary .giving-it-my-all{
         position: relative;
         bottom: 20%;
-        right:  25%;
+        right:  19%;
     }
 
 /* PORTFOLIO AND ABOUT ME RESPONSIVE */
 
     #portfolio h2, #timeline h2, #about-me h2, #skills h2, #connect h3{
-        font-size: 62px;
+        font-size: 72px;
     }
 
     #portfolio .row, #about-me .row{
@@ -755,7 +755,7 @@ h2, a, p{
 }
 
 #portfolio .row .col, #about-me .row .col{
-    width: 80%;
+    width: 90%;
 }
 
 #portfolio .row-1 .col-2, #portfolio .row-2 .col-1, #about-me .row-2 .col-2, #about-me .row-1 .col-1{
@@ -769,40 +769,45 @@ h2, a, p{
 
 #portfolio h3, #about-me h3{
     text-align: center;
-    font-size: 44px;    
+    font-size: 52px;    
 }
 
 #portfolio p, #about-me p{
     text-align: center;
-    font-size: 25px;
+    font-size: 32px;
 }
 
 #portfolio img, #about-me img{
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
+
+#portfolio .reference{
+    padding-bottom: 40px;
+}
+
 #portfolio .btn{
     display: flex;
-    width: 25%;
+    width: 40%;
     justify-content: center;
-    padding: 15px 30px;
-    font-size: 32px;
+    padding: 30px;
+    font-size: 42px;
     margin: 0 auto;
 }
 
 
 /* TIMELINE */
 #timeline h4{
-    font-size: 24px;
+    font-size: 44px;
 }
 
 #timeline h3{
-    font-size: 28px;
+    font-size: 48px;
 }
 
 #timeline p{
-    font-size: 22px;
+    font-size: 32px;
 }
 
 /* SKILL SECTION */
@@ -836,6 +841,7 @@ left: 31px;
 /* Full-width containers */
 .timeline-container .container {
 width: 100%;
+padding-bottom: 30px;
 padding-left: 70px;
 padding-right: 25px;
 }
@@ -889,11 +895,11 @@ left: 0%;
 
 #call-to-action h2{
     padding-top: 40px;
-    font-size: 42px;
+    font-size: 46px;
 }
 
-#call-to-action p, #about-me p, #portfolio p, #connect p{
-    font-size: 32px;
+#call-to-action p, #about-me p, #portfolio p, #connect p, #summary p{
+    font-size: 42px;
     padding-bottom: 10px;
 }
 
@@ -903,7 +909,7 @@ left: 0%;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 #skills .row{
@@ -930,7 +936,7 @@ left: 0%;
 }
 
 #footer p, #footer a{
-    font-size: 26px
+    font-size: 36px
 }
 
 }
