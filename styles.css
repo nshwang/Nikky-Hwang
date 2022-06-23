@@ -819,7 +819,7 @@ h2, a, p{
     min-height: 100px;
 }
 
-#footer p{
+#footer p, #footer a{
     font-size: 22px
 }
 
@@ -927,6 +927,10 @@ left: 0%;
 
 #connect p{
     padding-bottom: 40px;
+}
+
+#footer p, #footer a{
+    font-size: 26px
 }
 
 }
