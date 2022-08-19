@@ -938,3 +938,15 @@ left: 0%;
 }
 
 }
+
+
+#maintenance-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#maintenance-page p{
+    font-size: 32px;
+    font-weight: bold;
+}
